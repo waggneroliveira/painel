@@ -1,0 +1,15 @@
+@use "utilities/variables" as v;
+@use "utilities/mixins" as m;
+
+%theme {
+    &-ttl {
+        font-family: v.$clash-display;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: v.$color-black;
+
+        span {
+            color: v.$color-one;
+        }
+    }
+}

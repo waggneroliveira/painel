@@ -1,0 +1,15 @@
+:root {
+    --ubuntu: "Ubuntu", sans-serif;
+    --poppins: "Poppins", sans-serif;
+    --nunito: "Nunito", sans-serif;
+    --success: #28a745;
+}
+
+html {
+    font-size: 16px;
+}
+
+a,
+button {
+    cursor: pointer;
+}

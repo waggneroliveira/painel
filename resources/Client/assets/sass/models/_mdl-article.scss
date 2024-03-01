@@ -1,0 +1,15 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+@use "../theme";
+
+.mdl-article {
+    @include m.dis-flex();
+
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+
+    &__title {
+        @extend %theme-ttl;
+    }
+}

@@ -1,0 +1,202 @@
+/*
+ * ++ v1.1.0 (em desenvolvimento)
+ * ====== Aplicação criada por Iago Benvindo
+ */
+ :root {
+    --icon-color: #003f70;
+    --bars-height: 2px;
+    --dots-size: 3px;
+    --dots-margin: 1.5px;
+    --menu-font-family: "Ubunto", sans-serif;
+    --icon-width: 18px;
+    --icon-height: 18px;
+}
+
+/* LEGADO */
+/* Sidebar */
+.sidebar {
+    width: 350px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    z-index: 3002 !important;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.6s ease;
+}
+
+.sidebar.aberto {
+    right: 0;
+}
+
+.sidebar .inside {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow-y: auto;
+}
+
+.fundo-sidebar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0.7;
+    background: #000;
+}
+/* END LEGADO */
+
+/* .engloba-sidebar {
+    display: none;
+} */
+
+.btn-mn-mbl {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 41px;
+    width: 110px;
+    background-color: #003f70;
+    box-shadow: 1px 1px 0px #00000029;
+    border: none;
+    border-radius: 21px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+}
+
+.btn-mn-mbl.dots {
+    display: flex;
+}
+
+.btn-mn-mbl.dots .icon {
+    width: var(--icon-width);
+    height: var(--icon-height);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.btn-mn-mbl.dots span {
+    background-color: #FFF;
+    height: var(--dots-size);
+    width: var(--dots-size);
+    margin: var(--dots-margin);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.btn-mn-mbl.bars span {
+    width: 100%;
+    height: var(--bars-height);
+    background-color: var(--icon-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn-mn-mbl.bars span:nth-of-type(2) {
+    top: calc(50% - var(--bars-height) / 2);
+}
+
+.btn-mn-mbl.bars span:nth-of-type(3) {
+    top: unset;
+    bottom: 0;
+}
+
+.sidebar-bg {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0000008f;
+    position: fixed;
+    top: 0;
+    z-index: 3001;
+}
+
+#a-mb-close {
+    font-family: "fontello";
+    font-weight: 300;
+    font-size: 22px;
+    text-align: left;
+    padding: 10px 15px 15px 15px;
+    cursor: pointer;
+}
+
+.logo-side {
+    margin-bottom: 75px;
+    margin-left: 48px;
+}
+
+.logo-side img {
+    width: 60%;
+}
+
+.closeSidebar {
+    padding: 10px 0 0 15px;
+}
+
+.sidebar {
+    display: block;
+    /* padding: 10px; */
+    text-align: left;
+}
+
+.sidebar li {
+    /* height: 40px; */
+    display: flex;
+    justify-content: flex-start;
+    /* padding-left: 30px; */
+    align-items: center;
+}
+.sidebar .logo-side a {
+    font-size: 22px;
+}
+.sidebar a {
+    font-family: var(--menu-font-family);
+    font-size: 15px;
+    color: #575757;
+    font-weight: 600;
+    text-align: left;
+}
+.sidebar .btn-quer {
+    width: 238px;
+    height: 97px;
+    display: flex;
+    background: #f15b5c;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    flex-direction: column;
+    font-family: var(--ubuntu);
+    font-weight: 400;
+    margin: 0 auto;
+    line-height: 23px;
+}
+.sidebar .btn-quer b {
+    font-family: var(--ubuntu);
+    font-weight: bold;
+    font-size: 27px;
+    letter-spacing: 1.19px;
+}
+/* end menu responsivo */
+/* @media screen and (max-width: 880px) {
+    .btn-mn-mbl {
+        display: block;
+    }
+} */
